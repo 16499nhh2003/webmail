@@ -1,0 +1,150 @@
+html,body{
+    /* background-color:green; */
+    height: 100%;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.sign-up{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    /* background-color: #FF5ACD; */
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-sign-up{
+    background-color: white;
+    height: 70%;
+    width: 70%;
+    border-radius: 15px;
+    /* text-align:  center; */
+}
+.inner-sign-up >.left-sign-up{
+    width:  35%;
+    height: 100%;
+    background-color: #FBDA61;
+    background-image: linear-gradient(225deg, #FBDA61 19%, #FF5ACD 100%);
+    float:left;
+    text-align:  center;
+    border-radius: 15px 0px 0px 15px;
+    color: white;
+}
+#btn-sign-in{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color:pink;
+    /* background-color: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+}
+#btn-sign-in:hover{
+    background-color: #FBDA61;
+    background-image: linear-gradient(225deg, #FBDA61 19%, #FF5ACD 100%);
+    color:white;
+    transition: 1s;
+}
+.inner-sign-up >.right-sign-up{
+    width: 65%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+.inner-sign-up > .right-sign-up p {
+    margin-top: 30px;
+    text-align: center;
+    font-size:25px;
+}
+.item-name > input[type=text]{
+    padding: 10px 30px;
+    position: relative;
+}
+.item-name > span::before{
+    content:"\f007";
+    font-family:"Font Awesome 6 Free";
+    position: absolute;
+    transform: translate(10px,5px);
+    z-index: 1;
+}
+
+.item-email > input[type='text']{
+    padding: 10px 30px;
+    position: relative;
+}
+.item-email > span::before{
+    content:"\f0e0";
+    font-family:"Font Awesome 6 Free";
+    position: absolute;
+    transform:  translate(10px,5px);
+    z-index:1;
+}
+
+.item-phone > input[type='text']{
+    padding: 10px 30px;
+    position: relative;
+}
+.item-phone > span{
+    position: absolute;
+    transform:  translate(10px,5px);
+    z-index:1;
+}
+.item-pass > input[type='password']{
+    padding: 10px 30px;
+    position: relative;
+}
+.item-pass > input[type='text']{
+    padding: 10px 30px;
+    position: relative;
+}
+.item-pass > span::after{
+    content: "\f06e";
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    transform:  translate(-25px,6px);
+    z-index:1;
+}
+input[type='text'],input[type='password']{
+    height: 35px;
+}
+
+#btn-sign-up{
+    margin-top: 10px;
+    padding: 0px 20px;
+    border-radius:10px ;
+    background-color: #f7c2e8;
+}
+
+#btn-sign-up:hover{
+    background-color: #FBDA61;
+    background-image: linear-gradient(225deg, #FBDA61 19%, #FF5ACD 100%);
+    color:white;
+    transition: 1s;
+}
+.field-name,.field-email,.field-phone,.field-pass{
+    position: relative;
+    margin:10px;
+}
+label{
+    position: absolute;
+    transform: translate(-222px,7px);
+    z-index: 1;
+    font-size: small;
+    color:violet;
+    opacity: 1;
+    background-color: white;
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .inner-sign-up >.left-sign-up{
+        display: none;
+    }
+    .inner-sign-up >.right-sign-up{
+        width: 100%;
+        height: 100%;
+        float: left;
+        text-align: center;
+        border-radius:20px ;
+        /* animation:funcclo 5s infinite; */
+    } 
+
+}

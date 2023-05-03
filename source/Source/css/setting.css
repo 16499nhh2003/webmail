@@ -1,0 +1,107 @@
+body{
+    overflow-x: hidden;
+}
+/* ===== aside ====== */
+.settings{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 30px;
+    font-size: 20px;
+}
+/* ======== info-user======== */
+.settings .info-user{
+    padding: 30px 10px 10px 30px;
+    /* margin-top: 20px; */
+    height: 300px;
+    border:1px solid silver;
+}
+.settings .info-user input{
+    width: 50%
+}
+.settings .info-user .info-user-item{
+    margin-bottom: 20px;
+}
+.setting-form{
+    padding: 30px;
+    /* margin-left: 30px;  */
+}
+
+.setting-form div form div button{
+    background-color: red;
+    padding: 10px 50px;
+    margin-top: 10px;
+    color:white;
+    border-radius: 10px;
+}
+.setting-form div form div{
+    text-align: right;
+}
+/* ==== info user ====*/
+.info-user .info-user-item span{
+    width: 20px;
+}
+.info-user .info-user-item span div{
+    display: inline-block;
+    width: 50px;
+}
+
+/* =======setting-form-size======= */
+#setting-form-size{
+    padding: 30px;
+}
+#setting-form-size div form div{
+    margin-bottom: 20px;
+}
+#setting-form-size div form div input[type='number']{
+    width: 150px;
+    height: 30px;
+    /* background-color: aqua; */
+    margin-left: 10px;
+}
+#setting-form-size div form div select{
+    width: 150px;
+    height:30px;
+    /* margin-left: 10px; */
+}
+#setting-form-size div form div:nth-child(5){
+    /* background-color: aquamarine; */
+    text-align: center;
+}
+#setting-form-size div form div:nth-child(5) button{
+    /* background-color: aquamarine; */
+    text-align: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
+
+/* ===== Search ====== */
+.search div input{
+    padding: 0px 20px;
+    width: 100px; 
+}
+
+@media only screen and (min-width: 600px) {
+    .search div input{
+        width:150px;
+    }
+    .search div{
+        text-align: center; 
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .search div input{
+        width: 200px;
+    }
+    .search div{
+        text-align: center; 
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .search div input{
+        width: 250px;
+    }
+    .search div{
+        text-align: center; 
+    }
+}
