@@ -12,7 +12,7 @@ if (isset($_GET['id'])) {
         $ceg  = 1;
     }
     if ($user->gioitinh === 2) {
-        $ceg  = 21;
+        $ceg  = 2;
     }
 }
 ?>

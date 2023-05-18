@@ -1,3 +1,14 @@
+<?php
+    if (isset($_GET['id'])){
+        require_once './controller/connectDB.php';
+        global $conn;
+        $stmt = $conn->prepare("SELECT username from `accountUser` where idUser = ?");
+        $stmt->bind_param('i',$_GET['id']);
+        $stmt->execute();
+        $stmt->bind_result($username);
+        $stmt->fetch();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +34,12 @@
                 <p>Tên đăng nhập</p>
                 <div class="input-group mb-3">
                     <span class="input-group-text"><i class="fa-solid fa-user fa-beat"></i></span>
-                    <input name="username" type="text" class="form-control border border-dark" id="username" placeholder="Nhập tên đăng nhập" >
+                    <input name="username" type="text" class="form-control border border-dark" id="username" placeholder="Nhập tên đăng nhập" 
+                    value="<?php
+                        if(isset($username)){
+                            echo $username;
+                        }
+                    ?>" disabled >
                 </div>
                 
                 <p>Mật khẩu hiện tại</p>

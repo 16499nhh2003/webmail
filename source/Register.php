@@ -73,6 +73,7 @@
                 </div>
 
                 <div id="msg"></div>
+                <a href="login.php" style="text-decoration:none">Đăng nhập</a><br>
                 <div><button name="btn-add" id="btnsubmit" style="width:100%" type="submit" class="btn btn-info">Đăng Ký</button></div>
             </form>
         </div>

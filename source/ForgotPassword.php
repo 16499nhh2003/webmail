@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- lib -->
     <?php require_once("library.php") ?>
-    <title>Document</title>
+    <title>Quên Mật Khẩu</title>
 </head>
 
 <body>
@@ -80,8 +80,8 @@
                             <a href="login.php" style="text-decoration: none;">&nbspĐăng nhập</a><br>
                             <span style="color:black;">Tạo tài khoản mới ?</span>
                             <a href="Register.php" style="text-decoration: none;">&nbspĐăng Ký</a><br>
-                            <span style="color:black;">Đổi mật khẩu?</span>
-                            <a href="changePassword.php" style="text-decoration: none;">&nbspĐổi mật khẩu</a>
+                            <!--    <span style="color:black;">Đổi mật khẩu?</span> -->
+                            <!-- <a href="changePassword.php" style="text-decoration: none;">&nbspĐổi mật khẩu</a> -->
                             <?php
                                 if (isset($mess) && !empty($mess)){
                                     echo '<br><p style="color:red">'.$mess."</p>";

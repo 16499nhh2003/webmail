@@ -143,17 +143,17 @@ if (isset($_SESSION['name']) && !empty($_SESSION['name'])){
         <div class="row">
             <?php require_once("sidebarAdmin.php") ?>
             <div class="col-9 p-0">
-                <div style="padding: 20px; font-size: 20px;">
+                <!-- <div style="padding: 20px; font-size: 20px;">
                     <p class="p-0 m-0">Quản lý người dùng</p>
-                </div>
+                </div> -->
                 <div>
                     <div class="row">
-                        <div class="col-3 p-3 text-center"><span>Tìm kiếm</span></div>
+                        <!-- <div class="col-3 p-3 text-center"><span>Tìm kiếm</span></div>
                         <div class="col-6 p-1 text-center">
                             <input type="text" placeholder="Username" class="w-100 p-3" style="border-radius: 20px;">
-                        </div>
-                        <div class="col-3 text-center"><button type="button" id="btnadd" class="btn btn-success p-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Thêm tài khoản</button></div>
-                    </div>
+                        </div> -->
+                        <div class="col-3 text-center" style="margin-top:10px"><button type="button" id="btnadd" class="btn btn-success p-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Thêm tài khoản</button></div>
+                    </div> 
                     <div class="mt-4" style="padding: 15px;">
                         <div class="" style="margin-bottom: 20px">
                             <div class="card-body">

@@ -200,6 +200,7 @@ function formatDate(date) {
 }
 var emailDiv = document.getElementById("email");
 let username = $("#messName").text().trim();
+let start = $("#start").text.trim();
 
 var inboxButton = document.getElementById("openInbox");
 var inboxDiv = document.getElementById("inbox");
@@ -358,7 +359,7 @@ importantButton.addEventListener("click", function () {
   fetch(`./api/get-important.php?username=${username}`)
   .then((res) => res.json())
   .then((json) => {
-    console.log(json.data);
+    // console.log(json.data);
     if (json.success === true) {
       showDivImportant(json.data);
       let idArray = [];
@@ -510,7 +511,7 @@ function showDiv(mail) {
       <button class="btn-unread">
           <span class="material-symbols-outlined" id="forward${i}">forward</span>
       </button>
-      <button class="btn-unread" id="email-${mail[i].id}" onclick="changeRead(${mail[i].id})">
+      <button class="btn-unread" id="email-${mail[i].id}" odnclick="changeRead(${mail[i].id})">
           <span class="material-symbols-outlined">mark_email_unread</span>
       </button>
       <button class="btn-trash">
@@ -519,6 +520,7 @@ function showDiv(mail) {
     </div>
     `;
   }
+  // divs += `<p>abc</p>`
   divss.append(divs);
 }
 
@@ -658,7 +660,7 @@ function showDivTrash(mail) {
       </button>
     </div>
     `;
-  }
+  } 
   divss.append(divs);
 }
 

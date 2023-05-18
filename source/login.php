@@ -24,6 +24,7 @@ if (isset($_POST['btnlogin'])) {
             $_SESSION['name'] = $user->fullname;
             $_SESSION['email'] = $user->email;
             $_SESSION['huyhoa'] = "ok";
+            $_SESSION['id'] = $user->id;
             header("Location:index.php");
             die("Dang chuyen trang");
         }
@@ -35,7 +36,6 @@ if (isset($_POST['btnlogin'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Đăng nhập</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -136,7 +136,7 @@ if (isset($_POST['btnlogin'])) {
 <script>
     $('#btnsubmits').on("click",(evt)=>{
         evt.preventDefault();
-        // window.location.href = "./Register.php";
+        window.location.href = "./Register.php";
     })
 </script>
 </html>

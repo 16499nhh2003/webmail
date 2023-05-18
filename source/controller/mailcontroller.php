@@ -3,7 +3,7 @@ require_once('connectDB.php');
 class MailController{
     public function getMailByUserNameAndByType ($username,$type){
         global  $conn;
-        $stmt = $conn->prepare("select * from email where username = ? and idFolder = ? ORDER BY thoigian DESC ");
+        $stmt = $conn->prepare("select * from email where username = ? and idFolder = ? ORDER BY thoigian DESC");
         $stmt->bind_param('si',$username,$type);
         $stmt->execute();
         $stmt->bind_result($id,$chude,$noidung,$nguoigui,$thoigian,$starred,$read,$idFolder,$username);
